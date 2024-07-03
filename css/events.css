@@ -1,0 +1,160 @@
+/* THIS STYLE SHEET IS FOR EVENTS PAGE  */
+/* TABLE OF CONTENTS */
+/* 
+1. BASIC STYLING 6-15
+2. EVENT SECTION STYLES 17-35
+3. RESPONSIVE STYLES FOR MOBILE 41-58
+4. Filter styles - 96-140
+4. RESPONSIVE STYLES FOR DESKTOP 61-160
+*/
+aside{
+    display: none;
+}
+h1{
+    padding-left:0.8em;
+
+}
+.active-nav-link {
+    background-color: var(--col3);
+}
+/* EVENT SECTION STYLES START HERE */
+.events{
+    padding:0.8em;
+    margin:1em;
+}
+
+.eventcard{
+    margin-bottom:1.5em;
+   
+    border-radius: 5px;
+    padding: 0.6em;
+    border: 1px solid var(--col2); 
+    box-shadow: 0 4px 10px rgba(255, 136, 0, 0.2);
+    background-color: #f9f9f9;
+   
+}
+
+.eventcard p{
+    display:none;
+}
+
+/* RESPONSIVE STYLES FOR MOBILE START HERE */
+
+@media only screen and (min-width: 780px){
+    
+
+    .eventcard{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 1.5em;
+        
+    }
+
+    .event-description{
+        padding: 1em;
+    }
+
+    .eventcard p{
+        display:block;
+    }
+}
+/*RESPONSIVE STYLES FOR DESKTOP START HERE  */
+@media only screen and (min-width: 1180px){
+   
+    
+    .events-container{
+        display: grid;
+        grid-template-areas: "aside events";
+    }
+
+    aside{
+        grid-area:aside;
+        display: block;
+        padding:1em;
+    }
+
+    .events{
+        grid-area: events;
+    }
+   
+    .event-description {
+        display: inline-block;
+        
+        
+    }
+    .event-description h2 {
+        margin-top: 0;
+    }
+    
+    .event-description h4 {
+        margin-top: 1em;
+    }
+    
+    .event-description p {
+        margin-top: 1em;
+    }
+/* STYLING FOR FILTER BUTTON  */
+    .filter{
+        background-color: bisque;
+        margin-bottom: 2em;
+        margin-top:7%;
+        position: sticky;
+        top: 10px;
+        border-radius: 5px;
+        z-index: 100;
+
+    }
+    .filter h2{
+        padding: 1em;
+        font-size: 2em;
+
+    }
+    label{
+        font-weight: bold;
+        margin: 8px 5px;
+    }
+    
+
+.branch, .type, .price, .category, select {
+    padding: 6px 8px;
+    margin: 8px 5px;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 90%; 
+}
+
+
+
+.value button {
+    background-color: var(--col2); 
+    border: none; 
+    color: var(--col4); 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1em;
+    cursor: pointer; 
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+    .eventcard{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid var(--col2); 
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 136, 0, 0.2);
+    }
+
+    .event-description{
+        padding: 1em;
+    }
+
+    .eventcard p{
+        display:block;
+    }
+}
+

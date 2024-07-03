@@ -1,0 +1,71 @@
+/* PRODUCT PAGE STYLES START HERE  */
+/* /table of contents */
+/* 
+1. Basic styles for section - 1-16
+2. CARD styles 21-37
+3. Card Responsive styles 41-72
+*/
+/* Basic styles for both sections */
+section {
+  padding: 1em;
+}
+section h2 {
+  margin-top: 1em;
+  margin-left: 0.2em;
+}
+
+section p {
+  text-align: center;
+}
+
+/* card image styles start here  */
+.top,
+.new {
+  overflow: hidden; 
+}
+
+.top img,
+.new img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease; 
+}
+
+.top:hover img,
+.new:hover img {
+  transform: scale(1.1); 
+}
+/* Card Responsive styles  start here*/
+/* To make the products section responsive I have added auto grid system  */
+.top-sellers,
+.new-products {
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(10em, 1fr)
+  );
+  gap: 2em;
+}
+
+.top,
+.new {
+  border: 1px solid var(--col2);
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(255, 136, 0, 0.2);
+  text-align: center;
+}
+
+.top h3,
+.new h3 {
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+
+.top h4,
+.new h4 {
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: var(--col2);
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maplebrook Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/events.css">
+    <script src="https://kit.fontawesome.com/49f7fe92dc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.png" alt="Logo of Maplebrook Library, Letter M in bold style">
+            <ul class="nav-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a class="active-nav-link" href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+            
+            <form class="search-bar">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x search"></i>
+            </button>
+            </form>
+            <i class="fa-solid fa-language fa-2x translate"></i>
+            <i class="fa-solid fa-user fa-2x user"></i>
+            <i class="fa-solid fa-bars fa-2x bars" id="menu-icon"   ></i>
+            <i class="fa-solid fa-xmark fa-2x close" id="close-icon" ></i>
+         </nav>
+    </header>
+    <main>
+        <div >
+            <ul class="main-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+        </div>
+
+        <div class="events-container">
+            <aside>
+                <form class="filter">
+                    <h2>Filters</h2>
+                    <div class="branch"> 
+                        <label for="branch">Branch</label></br>
+                        <select id="branch" name="branch">
+                            <option value="select_value">Select Location</option>
+                            <option value="downtownottawa">Downtown, Ottawa</option>
+                            <option value="downtowntoronto">DownTown, Toronto</option>
+                            <option value="riversideottawa">Riverside South, Ottawa</option>
+                          </select>
+                    </div>
+                    <div class="type"> 
+                        <label for="type">Type</label></br> 
+                        <select id="type" name="type">
+                            <option value="select_value">Set type</option>
+                            <option value="virtual">Virtual</option>
+                            <option value="offline">Offline</option>
+                          
+                          </select>
+                    </div>
+                    <div class="price"> 
+                        <label for="price">Price</label></br> 
+                        <select id="price" name="price">
+                            <option value="select_value">Select Price</option>
+                            <option value="free">Free</option>
+                            <option value="lessthan20">0$ - 20$</option>
+                            <option value="between20to40">20$ - 40$</option>
+                          
+                          </select>
+                    </div>
+                    <div class="category"> 
+                        <label for="category">Category</label><br> 
+                        <select id="category" name="category">
+                            <option value="select_value">Select a Category</option>
+                            <option value="literary">Literary Events</option>
+                            <option value="workshops">Educational Workshops</option>
+                            <option value="book_clubs">Book Clubs</option>
+                            <option value="children_programs">Children's Programs</option>
+                            <option value="teen_programs">Teen Programs</option>
+                            <option value="adult_programs">Adult Programs</option>
+                            <option value="cultural_events">Cultural Events</option>
+                            <option value="technology_workshops">Technology Workshops</option>
+                            <option value="health_wellness">Health and Wellness Programs</option>
+                            <option value="community_engagement">Community Engagement Events</option>
+                            
+                        </select>
+                    </div>
+                    <div class="value">
+                        <button type="reset">Reset</button></br>
+                        <button type="submit">Apply</button>
+                    </div>
+                </form>
+            </aside>
+            <section class="events">
+                <h1>Events this Month</h1>
+                <div class="eventcard">
+                    <img src="../img/event1.jpg" alt="A person reading book">
+                    <div class="event-description">
+                    <h2>Author Reading by John Doe</h2>
+                    <h4>Library Auditorium</h4>
+                    <h4>Free</h4>
+                    <p>Experience the magic of literature with acclaimed author John Doe. Join us for an evening filled with captivating storytelling and insightful discussions.Don't miss this chance to meet the author and dive into the world of his latest work."</p>
+                    </div>
+                </div>
+                <div class="eventcard">
+                    <img src="../img/event2.jpg" alt="A person writing on brown wooden table">
+                    <div class="event-description">
+                    <h2>Writing Workshop: Crafting Short Stories</h2>
+                    <h4>Library Meeting Room</h4>
+                    <h4>$15</h4>
+                    <p>Unlock your creativity at our 'Crafting Short Stories' workshop! Delve into the art of storytelling as we explore the essential elements of crafting compelling narratives. Join fellow writers in honing your skills and unleashing your imagination in this interactive session.</p>
+                    </div>
+                </div>
+                <div class="eventcard">
+                    <img src="../img/event3.jpg" alt="books on brown wooden shelf">
+                    <div class="event-description">
+                    <h2>Mystery Book Club Discussion</h2>
+                    <h4>West Side Branch Library Community Room</h4>
+                    <h4> Free</h4>
+                    <p>Dive into the thrilling world of mystery with our Book Club Discussion! Join fellow enthusiasts as we dissect plot twists, unravel clues, and explore the depths of suspenseful storytelling.</p>
+                    </div>
+                </div>
+                <div class="eventcard">
+                    <img src="../img/event4.jpg" alt="A man in gray hoodie wearing blue helmet holding a welding tool">
+                    <div class="event-description">
+                    <h2>STEM Workshop: Introduction to Robotics</h2>
+                    <h4>North Side Branch Library Space</h4>
+                    <h4>$25</h4>
+                    <p>Embark on a journey into the future with our 'Introduction to Robotics' STEM Workshop! Discover the fascinating world of robotics as we delve into the fundamentals of design, programming, and innovation.Don't miss this opportunity to unlock the secrets of automation and creativity!</p>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+
+
+        
+
+    </main>
+    <footer>
+        <div class="footer-desktop">
+            
+            <img class="maps" src="../img/maps.jpg" alt="">
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>Address: Brooke Avenue, Maple City, K2R35E</p>
+                <p>Phone: +1 111 000 2456</p>
+                <p>E-mail: Brooke@avenue.com</p>
+            </div>
+            <div class="about">
+                <h2>About Us:</h2>
+                <a href="#">Privacy Policy</a> </br>
+                <a href="#">Terms and Conditions</a> </br>
+                <a href="#">Disclaimer</a> </br>
+                <a href="#">Copyright Information</a> </br>
+            </div>
+         </div>
+    </footer>
+    <script>
+
+        // This toggles the  main links and change to the menu icon to close icon
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.toggle('active');
+            document.getElementById('menu-icon').style.display = 'none'; 
+            document.getElementById('close-icon').style.display = 'inline-block'; 
+        });
+
+        //This is to close the main links and change the close icon to menu icon
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.remove('active');
+            document.getElementById('menu-icon').style.display = 'inline-block'; 
+            document.getElementById('close-icon').style.display = 'none'; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maplebrook Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/49f7fe92dc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.png" alt="Logo of Maplebrook Library, Letter M in bold style">
+            <ul class="nav-links">
+                <li> <a class="active-nav-link" href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+
+            <form class="search-bar">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x search"></i>
+                </button>
+            </form>
+            <i class="fa-solid fa-language fa-2x translate"></i>
+            <i class="fa-solid fa-user fa-2x user"></i>
+            <i class="fa-solid fa-bars fa-2x bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark fa-2x close" id="close-icon"></i>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <ul class="main-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+        </div>
+        <div class="bannerdesktop">
+            <div class="banner">
+                <img src="../img/banner.jpg" alt="A person showing something on a map">
+                <h2>History Hour</h2>
+                <button>BOOK NOW</button>
+            </div>
+            <div class="banner-info">
+                <h2> History Tour</h2>
+                <p> Join us for a captivating journey through the annals of our library's past. Delve into the
+                    narratives woven within the pages of our cherished tomes, tracing the evolution of knowledge and
+                    culture. From the quaint origins of our humble abode to the bustling hub of intellect it stands as
+                    today, discover the tales of perseverance, innovation, and enlightenment that have shaped our
+                    institution. </p>
+                <p>Whether you're a history enthusiast, a literary connoisseur, or simply curious minds seeking insight,
+                    this immersive experience promises to ignite your imagination and deepen your appreciation for the
+                    treasures housed within our walls.</p>
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+
+        <section>
+            <div class="programcards">
+                <div class="card">
+                    <img src="../img/card1.jpg" alt="">
+
+                    <h2>Dive into Literary Delights!</h2>
+                    <div class="description">
+                        <p>Step into the magical realm of literature, "Dive into Literary Delights!" event. Prepare to
+                            embark on a captivating journey through the pages of timeless tales, where every word has
+                            the power to transport you to distant lands and ignite your imagination.</p>
+                        <a href="#"><button>Book Now</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/card2.jpg" alt="">
+
+                    <h2>Exploring Digital Tools</h2>
+                    <div class="description">
+                        <p>Join us for an exciting event: "Exploring Digital Tools!" Dive into the world of digital
+                            technology as we showcase a range of innovative tools and resources to enhance your digital
+                            literacy skills. All are welcome to join us.</p>
+                        <a href="#"><button>Book Now</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/card3.jpg" alt="">
+
+                    <h2>Linguistic Horizons</h2>
+                    <div class="description">
+                        <p>Embark on a journey of linguistic exploration, "Linguistic Horizons" event. Immerse yourself
+                            in the diverse and fascinating world of languages as we celebrate the beauty, complexity,
+                            and cultural richness of human communication.</p>
+                        <a href="#"><button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-desktop">
+
+            <img class="maps" src="../img/maps.jpg" alt="">
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>Address: Brooke Avenue, Maple City, K2R35E</p>
+                <p>Phone: +1 111 000 2456</p>
+                <p>E-mail: Brooke@avenue.com</p>
+            </div>
+            <div class="about">
+                <h2>About Us:</h2>
+                <a href="#">Privacy Policy</a> </br>
+                <a href="#">Terms and Conditions</a> </br>
+                <a href="#">Disclaimer</a> </br>
+                <a href="#">Copyright Information</a> </br>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        // This toggles the  main links and change to the menu icon to close icon
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.toggle('active');
+            document.getElementById('menu-icon').style.display = 'none'; 
+            document.getElementById('close-icon').style.display = 'inline-block'; 
+        });
+
+        //This is to close the main links and change the close icon to menu icon
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.remove('active');
+            document.getElementById('menu-icon').style.display = 'inline-block'; 
+            document.getElementById('close-icon').style.display = 'none'; 
+        });
+    </script>
+</body>
+
+</html>

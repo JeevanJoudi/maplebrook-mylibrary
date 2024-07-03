@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maplebrook Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/service.css">
+    <script src="https://kit.fontawesome.com/49f7fe92dc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.png" alt="Logo of Maplebrook Library, Letter M in bold style">
+            <ul class="nav-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a class="active-nav-link" href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+            
+            <form class="search-bar">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x search"></i>
+            </button>
+            </form>
+            <i class="fa-solid fa-language fa-2x translate"></i>
+            <i class="fa-solid fa-user fa-2x user"></i>
+            <i class="fa-solid fa-bars fa-2x bars" id="menu-icon"   ></i>
+            <i class="fa-solid fa-xmark fa-2x close" id="close-icon" ></i>
+         </nav>
+    </header>
+    <main>
+        <div >
+            <ul class="main-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <form action="/action_page.php">
+                <h2>Sign up for Library Services</h2>
+                <div class="container"> 
+                    <div class="name">
+                        <div class="firstname">
+                            <label for="firstname">First Name</label> </br>
+                            <input type="text" id="firstname" name="firstname" placeholder=" First Name"></br>
+                        </div>
+                        
+                        <div class="lastname">
+                            <label for="lastname">Last Name</label></br>
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name"></br>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="email">
+                            <label for="email">Enter your email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email"></br>
+                        </div>
+                    
+
+                        <div class="category">
+                            <label for="category">Category</label></br>
+                            <select id="category" name="category">
+                            <option value="currentstudent">Current Student</option>
+                            <option value="alumini">Alumini</option>
+                            <option value="staff">Staff</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div>
+                        <input type="checkbox" id="verify" name="verify" value="Yes">
+                        <label for="verify"> I agree to the <a>Terms and Conditions</a></label><br>
+                    </div>
+                    <div class="signup-container">
+
+                        <input type="submit" value="Sign up" class="signup-button">
+                        
+                    </div>
+                </div>
+            </form>
+        
+            <aside class="services-list">
+                <h2>SERVICES</h2>
+                <a href="#">Book Loans</a></br>
+                <a href="#">Study Spaces</a></br>
+                <a href="#">Printers</a></br>
+                <a href="#">Photocopiers</a></br>
+                <a href="#">Workshops</a></br>
+                <a href="#">Training</a></br>
+                <a href="#">Accessibility Services</a></br>
+                <a href="#">24/7 Access</a></br>
+                <a href="#">Research</a></br>
+            </aside>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-desktop">
+            
+            <img class="maps" src="../img/maps.jpg" alt="">
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>Address: Brooke Avenue, Maple City, K2R35E</p>
+                <p>Phone: +1 111 000 2456</p>
+                <p>E-mail: Brooke@avenue.com</p>
+            </div>
+            <div class="about">
+                <h2>About Us:</h2>
+                <a href="#">Privacy Policy</a> </br>
+                <a href="#">Terms and Conditions</a> </br>
+                <a href="#">Disclaimer</a> </br>
+                <a href="#">Copyright Information</a> </br>
+            </div>
+         </div>
+    </footer>
+    <script>
+
+        // This toggles the  main links and change to the menu icon to close icon
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.toggle('active');
+            document.getElementById('menu-icon').style.display = 'none'; 
+            document.getElementById('close-icon').style.display = 'inline-block'; 
+        });
+
+        //This is to close the main links and change the close icon to menu icon
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.remove('active');
+            document.getElementById('menu-icon').style.display = 'inline-block'; 
+            document.getElementById('close-icon').style.display = 'none'; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+/* TABLE OF CONTENTS
+1. ASIDE STYLES 1-24
+2. FORM STYLES 29-75
+3. RESPONSIVE MOBILE - 79-110
+4. RESPONSIVE DESKTOP - 110 - 144
+*/
+/* ASIDE STYLES START HERE  */
+.services h2,
+.signup h2 {
+  font-size: 1.5em;
+  padding: 1em;
+}
+.active-nav-link {
+  background-color: var(--col3);
+}
+.services-list a {
+  display: inline-block;
+  max-width: 100vw;
+  gap: 1em;
+  text-align: left;
+  padding: 16px;
+  margin-left: 1em;
+  color: var(--col3);
+}
+.services-list {
+  background-color: rgb(253, 233, 206);
+}
+/* FORM STYLES START HERE  */
+.signup {
+  border-radius: 5px;
+
+  padding: 20px;
+}
+
+form {
+  background-color: bisque;
+  margin-bottom: 2em;
+}
+
+label {
+  font-weight: bold;
+  margin: 8px 5px;
+}
+.signup form input[type="text"],
+.signup form input[type="email"],
+.signup form select {
+  padding: 12px 20px;
+  margin: 8px 5px; 
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  width: 90%;
+}
+.signup a {
+  color: var(--col2);
+}
+input[type="submit"] {
+  font-weight: bold;
+}
+.signup-container {
+  margin-left: 0.8em;
+  padding: 0.8em 0 2em 0; 
+}
+.signup-button {
+  background-color: var(--col2); 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* FORM STYLES ENDED */
+/* RESPONSIVE MOBILE STYLES START HERE  */
+@media only screen and (min-width: 780px) and (max-width: 1180px) {
+  .services h2,
+  .signup h2 {
+    font-size: 2em;
+  }
+  .container {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .name {
+    display: flex;
+    gap: 1em;
+  }
+  .details {
+    display: flex;
+    gap: 1em;
+  }
+
+  .firstname,
+  .lastname {
+    flex: 1;
+  }
+
+  .email {
+    flex: 2;
+  }
+  .category {
+    flex: 1;
+  }
+}
+/* RESPONSIVE DESKTOP  STYLES START HERE*/
+@media only screen and (min-width: 1180px) {
+  .services h2,
+  .signup h2 {
+    font-size: 2em;
+  }
+
+  .signup {
+    display: grid;
+    grid-template-areas: "form aside ";
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+  .container {
+    grid-area: form;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 16px;
+    padding: 1em;
+  }
+
+  .firstname,
+  .lastname,
+  .email,
+  .category {
+    width: 100%;
+  }
+
+  .services-list {
+    grid-area: aside;
+  }
+}

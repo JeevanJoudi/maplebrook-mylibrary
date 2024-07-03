@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maplebrook Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/49f7fe92dc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.png" alt="Logo of Maplebrook Library, Letter M in bold style">
+            <ul class="nav-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a class="active-nav-link" href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+
+            <form class="search-bar">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x search"></i>
+                </button>
+            </form>
+            <i class="fa-solid fa-language fa-2x translate"></i>
+            <i class="fa-solid fa-user fa-2x user"></i>
+            <i class="fa-solid fa-bars fa-2x bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark fa-2x close" id="close-icon"></i>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <ul class="main-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="programs.html">Programs</a></li>
+                <li> <a href="events.html">Events</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="products.html">Products</a></li>
+            </ul>
+        </div>
+        <section>
+            <section>
+                <div class="programcards">
+                    <div class="card">
+                        <img src="../img/card1.jpg" alt="">
+
+                        <h2>Dive into Literary Delights!</h2>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ligula mauris, dictum
+                                nec ultricies vel, facilisis commodo enim. Curabitur quis ullamcorper quam, nec
+                                imperdiet nunc. Pellentesque sapien lacus, pharetra eu erat id, luctus malesuada nulla.
+                            </p>
+                            <a href="#"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/card2.jpg" alt="">
+
+                        <h2>Exploring Digital Tools</h2>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ligula mauris, dictum
+                                nec ultricies vel, facilisis commodo enim. Curabitur quis ullamcorper quam, nec
+                                imperdiet nunc. Pellentesque sapien lacus, pharetra eu erat id, luctus malesuada nulla.
+                            </p>
+                            <a href="#"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/card3.jpg" alt="">
+
+                        <h2>Linguistic Horizons</h2>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ligula mauris, dictum
+                                nec ultricies vel, facilisis commodo enim. Curabitur quis ullamcorper quam, nec
+                                imperdiet nunc. Pellentesque sapien lacus, pharetra eu erat id, luctus malesuada nulla.
+                            </p>
+                            <a href="#"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+    </main>
+    <footer>
+        <div class="footer-desktop">
+
+            <img class="maps" src="../img/maps.jpg" alt="">
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>Address: Brooke Avenue, Maple City, K2R35E</p>
+                <p>Phone: +1 111 000 2456</p>
+                <p>E-mail: Brooke@avenue.com</p>
+            </div>
+            <div class="about">
+                <h2>About Us:</h2>
+                <a href="#">Privacy Policy</a> </br>
+                <a href="#">Terms and Conditions</a> </br>
+                <a href="#">Disclaimer</a> </br>
+                <a href="#">Copyright Information</a> </br>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        // This toggles the  main links and change to the menu icon to close icon
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.toggle('active');
+            document.getElementById('menu-icon').style.display = 'none'; 
+            document.getElementById('close-icon').style.display = 'inline-block';
+        });
+
+        //This is to close the main links and change the close icon to menu icon
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.querySelector('.main-links').classList.remove('active');
+            document.getElementById('menu-icon').style.display = 'inline-block'; 
+            document.getElementById('close-icon').style.display = 'none'; 
+        });
+    </script>
+</body>
+
+</html>
